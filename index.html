@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Electronic Gadgets Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="open" onclick="move();"></div>
+    <nav>
+        <div class="close" onclick="move();"></div>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <a href="#">MOBILES</a>
+            <a href="#">TABLETS</a>
+            <a href="#">LAPTOPS</a>
+            <a href="#">COMPUTERS</a>
+            <a href="#">WATCHES</a>
+            <a href="#">HEADPHONES</a>
+            <a href="#">EARPHONES</a>
+    </nav>
+    <script src="https://kit.fontawesome.com/b33a0e6fd4.js" crossorigin="anonymous"></script>
+    <script>
+        let box=document.querySelector("nav");
+        const move=()=>{
+            let x=box.style.right;
+            x= (x=="0px"?"-200px":"0px");
+            box.style.right=x;
+        }
+    </script>
+</body>
+</html>
